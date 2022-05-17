@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"gopkg.in/alecthomas/kingpin.v2"
-	"log"
 	"os"
 )
 
@@ -31,5 +30,5 @@ func main() {
 		fmt.Println("Error : ", err)
 		return
 	}
-	log.Println("log file is converted to " + *output)
+	fmt.Println("The log file has been converted to " + *output)
 }
